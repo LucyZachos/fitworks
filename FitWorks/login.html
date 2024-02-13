@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitWorks GYM</title>
+  <!-- Link the CSS file "style.css" -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form action="login.php" name="login" method="POST">
+    <main>
+      <div class="box-form">
+
+        <!-- container for left-side of box form -->
+        <div class="left">
+          <div class="overlay">
+            <header>
+              <h1>Fit Gym</h1>
+              <h2>Welcome back!</h2>
+            </header>
+          </div>
+        </div>
+
+        <!-- container for right-side of box form -->
+        <div class="right">
+          <header>
+            <h3>LOG IN</h3>
+          </header>
+
+          <!-- Label and input for the user's email address and password -->
+          <div class="inputs">
+            <label for="email">Email Address:</label>
+            <input type="email" class="text-line" name="email" required><br>
+            <label for="passwrd">Password:</label>
+            <input type="password" class="text-line" name="passwrd" required><br>
+            
+            <!-- login button -->
+            <input type="submit" class="button" name="login" id="button" value="SIGN IN">
+
+            <!-- link to registration page for potential members to sign up -->
+            <h4><a href="registration.html">Not a member? Register here</a></h4>
+          </div>
+        </div>
+      </div>
+    </main>
+  </form>
+</body>
+</html>

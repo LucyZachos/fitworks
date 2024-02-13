@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitWorks GYM</title>
+
+    <!-- Link the CSS file "style.css" -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Link to registration.php and javascript validation -->
+    <form action="registration.php" name="registration" method="POST">
+
+        <main>
+            <div class="box-form">
+
+                <!-- container for left-side of box form -->
+                <div class="left">
+                    <div class="overlay">
+                        <header>
+                            <h1>Fit Gym</h1>
+                            <h2>Register with us today!</h2>
+                        </header>
+                    </div>
+                </div>
+
+                <!-- container for right-side of box form -->
+                <div class="right">
+                    <header>
+                        <h3>REGISTER</h3>
+                    </header>
+                    <div class="inputs">
+
+                        <!-- Label and input for the user's first name, surname, cellphone number, email address and password -->
+                        <label for="first_name">Name:</label>
+                        <input type="text" class="text-line" name="first_name" required><br>
+                        <label for="last_name">Surname:</label>
+
+                        <input type="text" class="text-line" name="last_name" required><br>
+                        <label for="phone_number">Cellphone Number:</label>
+
+                        <input type="tel" class="text-line" name="phone_number" required><br>
+                        <label for="email">Email Address:</label>
+
+                        <input type="email" class="text-line" name="email" required><br>
+                        <label for="passwrd">Password:</label>
+
+                        <!-- Set to password type to hide user input-->
+                        <input type="password" class="text-line" name="passwrd" required><br>
+                    </div>
+
+                    <!-- Label and dropdown options for goals -->
+                    <div class="dropdown-boxes">
+                        <label for="goals">What are your fitness Goals:</label>
+                        <select class="dropdown" name="fitness_goals">
+                            <option value="Get Fit">Get Fit</option>
+                            <option value="Lose Weight">Lose Weight</option>
+                            <option value="Build Muscle">Build Muscle</option>
+                        </select><br>
+
+                        <!-- Label and dropdown options for schedule -->
+                        <label for="schedule">How often do you wish to train a week?:</label>
+                        <select class="dropdown" name="workout_schedule">
+                            <option value="1 day per week">1 day per week</option>
+                            <option value="2 days per week">2 days per week</option>
+                            <option value="3 days per week">3 days per week</option>
+                            <option value="4 days per week">4 days per week</option>
+                            <option value="5 days per week">5 days per week</option>
+                            <option value="6 days per week">6 days per week</option>
+                            <option value="7 days per week">7 days per week</option>
+                        </select><br>
+
+                        <!-- Label and dropdown options for fitness -->
+                        <label for="fitness">Select your current fitness level:</label>
+                        <select class="dropdown" name="fitness_level">
+                            <option value="Couch potato">Couch potato</option>
+                            <option value="Beginner">Beginner</option>
+                            <option value="Intermediate">Intermediate</option>
+                            <option value="Advanced">Advanced</option>
+                            <option value="I will bench your car">I will bench your car</option>
+                        </select>
+
+                        <!-- registration button -->
+                        <input type="submit" class="button" name="register" id="button" value="REGISTER NOW">
+
+                        <!-- link to login page for existing members -->
+                        <h4><a href="login.html">Already a member? Sign in</a></h4>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </form>
+</body>
+
+</html>

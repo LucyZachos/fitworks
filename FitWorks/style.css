@@ -1,0 +1,170 @@
+/* custom font families to be used on webpage */
+@font-face {
+	font-family: 'myFont1';
+	src: url(fonts/maidenCrimes.ttf) format(truetype);
+}
+
+@font-face {
+	font-family: 'myFont2';
+	src: url(fonts/Granite-Bgvl.ttf) format(truetype);
+}
+
+/* webpage body*/
+body {
+	background-image: url("https://e1.pxfuel.com/desktop-wallpaper/874/657/desktop-wallpaper-gym-aesthetics-gym.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: #333333;
+}
+
+/* User inputs box form */
+.box-form {
+	box-shadow: 0px 0px 10px #ffffff;
+	position: relative;
+	margin: 0 auto;
+	width: 50%;
+	background: #505455;
+	border-radius: 15px;
+	border-style: outset;
+	overflow: hidden;
+	display: flex;
+	flex: 1 1 100%;
+	align-items: stretch;
+	justify-content: space-between;
+
+}
+
+@media only screen and (max-width:500px) {
+
+	/* For mobile phones: */
+	.box-form,
+	.overlay,
+	.right,
+	.left,
+	.button,
+	.dropdown-boxes,
+	.dropdown,
+	.text-line {
+		width: 100%;
+	}
+}
+
+.overlay {
+	padding: 30px;
+	width: 150%;
+	height: 150%;
+	background: #2d3031;
+	opacity: 0.8;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+/* Left-hand side of the  box*/
+.left {
+	color: #ffffff;
+	width: 60%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(135deg, #272727 10%, #898d7a 100%);
+	overflow: hidden;
+}
+
+/* Left-hand side of the  box*/
+.right {
+	padding: 40px;
+	zoom: 1;
+	margin-bottom: 10px;
+	overflow: hidden;
+	font-family: Helvetica;
+}
+
+.inputs label {
+	width: 150px;
+	display: inline-block;
+	color: white;
+	margin-bottom: 20px;
+
+}
+
+.text-line {
+	background-color: #ffffff;
+	font-size: medium;
+	color: #000000;
+	outline: none;
+	outline-style: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	padding: 3px 10px;
+	margin-bottom: 10px;
+}
+
+.dropdown-boxes label {
+	color: white;
+	display: inline-block;
+	color: white;
+	margin-bottom: 20px;
+}
+
+.button {
+	font: #ffffff;
+	background-color: #136633;
+	box-shadow: 0px 0px 1px #000000;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	border-radius: 10px;
+	display: inline-block;
+	text-align: center;
+	border: 0;
+	outline: 0;
+	margin-bottom: 10px;
+	cursor: pointer;
+	height: 45px;
+}
+
+/* Button hover action*/
+.button:hover {
+	background-color: #3e8e41
+}
+
+.button:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+.dropdown {
+	cursor: pointer;
+}
+/* Headings*/
+h1 {
+	padding-top: 20px;
+	font-family: 'myFont1';
+	font-size: 3.3vw;
+	color: #136633;
+	-webkit-text-stroke: 1px #ffffff;
+}
+
+h2 {
+	font-family: 'myFont2';
+	font-size: 1.8vw;
+	color: #ffffff;
+}
+
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	font-weight: bold;
+	font-size: 3vw;
+	color: #ffffff;
+}
+
+h4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: lighter;
+	font-size: 0.7vw;
+	color: #ffffff;
+	margin-top: 0%;
+}
